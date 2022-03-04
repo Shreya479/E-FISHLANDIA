@@ -16,10 +16,10 @@ export default function Product() {
           <div className="productTopLeft">
               <Chart data={productData} dataKey="Sales" title="Sales Performance"/>
           </div>
-          <div className="productTopRight">
+         <div className="productTopRight">
               <div className="productInfoTop">
-                  <img src="https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="productInfoImg" />
-                  <span className="productName">Apple Airpods</span>
+                  <img src="https://th.bing.com/th/id/OIP.puMo9ITfruXP8iQx9cYcqwHaGJ?pid=ImgDet&rs=1" alt="" className="productInfoImg" />
+                  <span className="productName">Archer fish</span>
               </div>
               <div className="productInfoBottom">
                   <div className="productInfoItem">
@@ -59,7 +59,7 @@ export default function Product() {
               </div>
               <div className="productFormRight">
                   <div className="productUpload">
-                      <img src="https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="productUploadImg" />
+                      <img src="https://th.bing.com/th/id/OIP.puMo9ITfruXP8iQx9cYcqwHaGJ?pid=ImgDet&rs=1" alt="" className="productUploadImg" />
                       <label for="file">
                           <Publish/>
                       </label>
