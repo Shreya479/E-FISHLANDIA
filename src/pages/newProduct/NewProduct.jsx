@@ -4,7 +4,6 @@ export default function NewProduct() {
   return (
     <div className="newProduct">
       <h1 className="addProductTitle">Add New Product</h1>
-      <img className='form-img' src='https://s3.ap-southeast-1.amazonaws.com/easystore.website/images/campaigns/covid19/sop-3.gif' alt='spaceship' />
       <form className="addProductForm">
         <div className="addProductItem">
           <label>Image</label> <input type="file" id="file" />
