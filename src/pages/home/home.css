@@ -1,0 +1,28 @@
+.home{
+    flex: 4;
+    margin-top: 50px;
+}
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+}
+.main__container {
+    padding: 20px 35px;
+  } 
+  .main__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+  .main__title > img {
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 10rem;
+  }
+  .main__greeting > h1 {
+    font-size: 40px;
+    color: #2e4a66;
+    margin-bottom: 4px; 
+  }
