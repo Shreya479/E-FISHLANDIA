@@ -52,7 +52,6 @@ function App() {
           </Route>
           <Route path="/product/:productId">
           <Sidebar/>
-          <Sidebar/>
             <Product />
           </Route>
           <Route path="/newproduct">
