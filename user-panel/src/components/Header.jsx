@@ -23,6 +23,9 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="">ORDERS</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="Helpdesk">CONTACT US</Link>
+                            </li>
                         </ul>
                         <Link className="navbar-brand mx-auto fw-bold" to="/">FISH LANDIA</Link>
                         <Login />
