@@ -26,3 +26,18 @@
     color: #2e4a66;
     margin-bottom: 4px; 
   }
+ 
+.problems{
+  margin-left: 70px;
+  margin-top: 70px;
+  width: 90%;
+  font-size: x-large;
+  font-weight: bold;
+  box-shadow: inset;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+h4{
+  margin-left: 350px;
+  text-decoration-line: underline;
+}
