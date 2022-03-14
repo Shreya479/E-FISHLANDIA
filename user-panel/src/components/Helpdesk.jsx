@@ -1,19 +1,19 @@
 import React, {useEffect,useState} from 'react';
 
-const Helpdesk = () =>{
- 
-    
+const Helpdesk = () => {
     const[name,setName]=useState('')
+    const[userid,setUserid]=useState('')
+    const[email,setEmail]=useState('')
     const[problem,setProblem]=useState('')
-    const[stock,setstock]=useState('')
-    const[students,setStudents]=useState([])
+
+  
 
    const handleClick=(e)=>{
     e.preventDefault()
-    const student={name,problem,stock}
+    const student={name,userid,email,problem,}
     console.log(student)
     
-    fetch("http://localhost:8080/review/add",{
+    fetch("http://localhost:8080/helpdesk/add",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(student) //jsobject to json string
@@ -26,44 +26,53 @@ const Helpdesk = () =>{
 useEffect(()=>{
 
 },[])
-
-  return (
-    <div><h2>Helpdesk</h2>
     
-    <div class="grid-container">
-    <div class="grid-item">
-    <div className='add_wishlist'>
-    <u style={{color:"blacke"}}>Enter your Problem</u>
-  
-  <form  noValidate autoComplete="off">
-  
-  <input type="text" id="outlined-basic" placeholder="Enter name" label="Student Name" variant="outlined" fullWidth 
-  value={name} 
-  onChange={(e)=>setName(e.target.value)}
-  /><br/>
-  
-  <input type="text" id="outlined-basic" placeholder="Enter Problem" label="Student Adress" variant="outlined" fullWidth
-  value={problem}
-  onChange={(e)=>setProblem(e.target.value)}/><br/>
-  <input type="button" id="wishlist_btn" value="Add" variant="contained" color="secondary" onClick={handleClick}/>
-  </form>
-  </div>
+  return (
+    <div>
+      <div className="container mb-5">
+        <div className="row">
+          <div className="col-12 text-center py-4 my-4">
+            <h1>Have Question ?</h1>
+            <hr />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-5 d-flex justify-content-center">
+            <img src="/assets/image/messages.png" alt="" height='300' width='300' />
+          </div>
 
+          <div className="col-md-6">
+            <div className="mb-3">
+              <label for="exampleFormControlInput1" className="form-label">Full Name</label>
+              <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Name" value={name}
+               onChange={(e)=>setName(e.target.value)} />
+            </div>
 
+            <div className="mb-3">
+              <label for="exampleFormControlInput2" className="form-label">Email</label>
+              <input type="text" className="form-control"  placeholder="example@gmail.com" 
+              value={email}
+              onChange={(e)=>setEmail(e.target.value)}/>
+            </div>
+
+            <div className="mb-3">
+              <label for="exampleFormControlInput2" className="form-label">UserId</label>
+              <input type="text" className="form-control"  placeholder="UserId" 
+              value={userid}
+              onChange={(e)=>setUserid(e.target.value)}/>
+            </div>
+
+            <div className="mb-3">
+              <label for="exampleFormControlTextarea1" className="form-label">Message</label>
+              <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={problem}
+              onChange={(e)=>setProblem(e.target.value)}></textarea>
+            </div>
+            <button type="submit" className='btn btn-outline-primary' onClick={handleClick}>Send Message</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="grid-container2">
-     <div class="grid-item">
-     Payments and Billing
-     </div>
-    <div class="grid-item">Signin Help</div>  
-    <div class="grid-item">General</div>
-
-  </div>
-  </div>
-
-</div>
-  );
+  )
 }
 
-
-export default Helpdesk;
+export default Helpdesk
