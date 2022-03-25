@@ -13,7 +13,7 @@ const Helpdesk = () => {
     const student={name,userid,email,problem,}
     console.log(student)
     
-    fetch("http://localhost:8080/helpdesk/add",{
+    fetch("http://localhost:8080/helpdesk/addHelpdesk",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(student) //jsobject to json string
