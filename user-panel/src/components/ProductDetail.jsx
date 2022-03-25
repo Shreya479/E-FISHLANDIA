@@ -36,11 +36,11 @@ const ProductDetail = () => {
                         <h1 className='display-5 fw-bold'>{product.title}</h1>
                         <hr />
                         <h2 className='my-3'>$ {product.price}</h2>
-                        <Link to="#" style={{paddingTop:"10px",paddingBottom:"10px"}} className="review">Reviews</Link>
+                        
+                        <Link to="reviews" style={{paddingTop:"10px",paddingBottom:"10px"}} className="review">Reviews</Link>
                         <p>{product.desc}</p>
                         <div class="btn-group" role="group">
                         <button onClick={() => handleCart(product)} className='btn btn-outline-primary m-4 rounded btn-block'>{cartBtn}</button>
-                        <button className='btn btn-outline-primary m-4 rounded btn-block'>Add to WishList</button>
                         </div>
                     </div>
                 </div>
