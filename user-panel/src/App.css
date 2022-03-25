@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+
+h4{
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+h3{
+  margin-left: 15px;
+  font-weight:200;
+}
+
+input[type="radio"]{
+  display: none;
+}
+.star{
+cursor:pointer;
+transition: color 200ms;
+}
+#review_name{
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 40px;
+}
+
+#review_input{
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 80px;
+}
+#review_btn{
+  background-color: #ffffff;
+  color: blue;
+  margin-left: 268px;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  border: 1px solid blue;
+}
+
+#review_btn:hover{
+  background-color: blue;
+  color: white;
+}
+.review_star{
+  margin-left: 20px;
+  
+}
+
+.display_review{
+  box-shadow: 0 5px 8px 0 rgb(2, 2, 2), 0 7px 20px 0 rgba(107, 106, 55);
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  font-size: x-large;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.review_grid{
+  border: 2px solid black;
+  padding-left: 20px;
+  border-radius: 10px;
+}
